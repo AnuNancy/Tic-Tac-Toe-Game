@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/statusX"
+        android:textColor="@color/colorRed"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnReplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStatus">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="3dp">
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="2"
+                tools:src="@drawable/cross" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="3dp">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="4"
+                tools:src="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="5" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="3dp">
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="tap"
+                android:tag="8" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnReplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/replay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

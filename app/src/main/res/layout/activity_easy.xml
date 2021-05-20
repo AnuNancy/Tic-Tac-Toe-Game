@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.EasyActivity">
+
+    <TextView
+        android:id="@+id/txtPlayerStatus"
+        style="@style/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/txtCountTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txtCountTimer"
+        style="@style/txtBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayerStatus"
+        tools:text="2" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="3dp">
+
+            <ImageView
+                android:id="@+id/img00"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick" />
+
+            <ImageView
+                android:id="@+id/img01"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick" />
+
+            <ImageView
+                android:id="@+id/img02"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick"
+                tools:src="@drawable/cross" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="3dp">
+
+            <ImageView
+                android:id="@+id/img10"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick" />
+
+            <ImageView
+                android:id="@+id/img11"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick"
+                tools:src="@drawable/circle" />
+
+            <ImageView
+                android:id="@+id/img12"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="3dp">
+
+            <ImageView
+                android:id="@+id/img20"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick" />
+
+            <ImageView
+                android:id="@+id/img21"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick" />
+
+            <ImageView
+                android:id="@+id/img22"
+                android:layout_width="@dimen/blockSize"
+                android:layout_height="@dimen/blockSize"
+                android:layout_margin="3dp"
+                android:background="@color/colorBg"
+                android:contentDescription="@string/block"
+                android:onClick="onGameClick" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnReplay"
+        style="@style/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/replay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

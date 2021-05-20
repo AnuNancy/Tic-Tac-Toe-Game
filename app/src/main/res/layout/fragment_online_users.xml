@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.OnlineUsersFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_small"
+            android:paddingHorizontal="@dimen/paddingHorizontal"
+            android:paddingVertical="@dimen/paddingVertical"
+            android:textSize="@dimen/txt"
+            android:fontFamily="@font/alegreya_sc"
+            android:textColor="@color/colorBlack"
+            android:text="@string/users_online" />
+
+        <View
+            android:id="@+id/line"
+            style="@style/line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="@dimen/margin_small"
+            android:paddingVertical="@dimen/paddingVertical"
+            android:paddingHorizontal="@dimen/paddingHorizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        tools:visibility="gone"
+        style="@style/progressLayout">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</FrameLayout>
