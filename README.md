@@ -3,8 +3,7 @@ Mind game on 3x3 grid.
     
     
 INTRODUCTION-
-This game is also called as Noughts and Crosses or Xs and Os. This is a simple mind game where we use logic, intelligence and rational thinking with searching and sorting algorithm so that there exists no
-biasness to defeat the opponent. The player whio succeds in placing their moves in a horizontal, vertical or diagonal alignment wins the game.
+This game is also called as Noughts and Crosses or Xs and Os. This is a simple mind game where we use logic, intelligence and rational thinking with searching and sorting algorithm so that there exists no biasness to defeat the opponent. The player whio succeds in placing their moves in a horizontal, vertical or diagonal alignment wins the game.
 
 GENERAL RULE TO WIN THIS GAME-
 When player plays first then chance of player winning increases and when opponent plays first then there is maximum chance of tie.
